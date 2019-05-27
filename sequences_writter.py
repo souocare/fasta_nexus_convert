@@ -24,7 +24,6 @@ def seq_writter(fasta):
             k = k[:98]
         qualquer = len(maior) -1
         tamanho = qualquer - len(k)
-        print(" "*tamanho + "{}  {}".format(k,v))
         sequences+=" "*tamanho + "{}  {}".format(k,v) + "\n"
 
     return sequences
