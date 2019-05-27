@@ -16,8 +16,6 @@ def cabecalho(fasta):
         NCHAR = len(v)
         break
 
-    global start_nexus
-
     # Faz um "print" do inicio do nexus, que contém a informação, antes do alinhamento das sequêncis no Nexus
     start_nexus = "#Nexus\n\nBEGIN DATA;\nDIMENSIONS NTAX={} NCHAR={};\nFORMAT DATATYPE=DNA MISSING=N GAP=-;\nMATRIX\n".format(taxa,NCHAR)
 
