@@ -4,7 +4,6 @@ def seq_writter(fasta):
     :param fasta: Recebe o número de sequências e os seus nomes
     :return: Retorna a sequência alinhada
     '''
-    global sequences
     sequences=""
 
     #A variável maior vai receber o maior nome que existe de todos os nomes das sequências
