@@ -1,6 +1,8 @@
 #a função vai requisitar 2 valores para que a funçãu funcione: ngen e outgroup
 def mrbayes_blockwriter(ngen, outgroup):
-    global mrbayes_final  
+    '''
+	Aceita os argumentos ngen (integer), e outgroup (string). Vai retornar uma variável com o texto final para colocar no ficheiro nexus.
+	'''
 	#vai colocar a variável global para depois ser usada no main.py
 	
     end = "  ;\nEND;\n\n"
