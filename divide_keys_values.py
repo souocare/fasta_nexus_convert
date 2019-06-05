@@ -15,3 +15,4 @@ def fasta_rearrange(fasta):
                 fasta_file[key] = val # coloca no dicionarios os valores e as chaves
 
     novo = {k.replace('>', ''): v for k, v in fasta_file.items()} # faz replace ao > por nada
+    return novo
