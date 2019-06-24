@@ -14,7 +14,7 @@ def mrbayes_blockwriter(ngen, outgroup):
 	
     mrbayes = "begin mrbayes;\n  set autoclose=yes\n" \
               "  outgroup {};\n" \
-              "  mcmp ngen={} printfre=1000 samplefreq=100 diagnfre=1000 nchains=4 savebrlens=yes filename=MyRun01;\n" \
+              "  mcmp ngen={} printfreq=1000 samplefreq=100 diagnfreq=1000 nchains=4 savebrlens=yes filename=MyRun01;\n" \
               "  mcmc;" \
               "  sumt filename=MyRun01;\n" \
               "end;".format(outgroup, ngen)
