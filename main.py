@@ -18,11 +18,7 @@ new_header = cabecalho.cabecalho(new_key_values)
 new_sequence = sequences_writter.seq_writter(new_key_values)
 #corre o module 'sequences_writter', correndo a função 'seq_writter', dando à função a variável obtida da função acima, obtendo a variável 'sequences'
 
-mb_blockwritter = mrbayes_blockwriter(ngen, outgroup)
-#corre o module 'mrbayes', correndo a função 'mrbayes_blockwriter', dando à função a variável 'ngen' e 'outgroup' obtidas inicialmente, obtendo a variável 'mrbayes_final'
-
-
-nexus_writter= new_header + new_header + mb_blockwritter
+nexus_writter= new_header + new_sequence
 #na variavel nexus_writter, juntamos as várias variáveis obtidas anteriormente
 
 nexus_file= open("nexus_file.nex", "w+")
